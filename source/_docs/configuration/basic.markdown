@@ -15,6 +15,7 @@ homeassistant:
   elevation: 430
   unit_system: metric
   currency: USD
+  country: US
   time_zone: "America/Los_Angeles"
   external_url: "https://www.example.com"
   internal_url: "http://homeassistant.local:8123"
@@ -58,6 +59,10 @@ unit_system:
   type: string
 temperature_unit:
   description: "Override temperature unit set by unit_system. `C` for Celsius, `F` for Fahrenheit."
+  required: false
+  type: string
+country:
+  description: "Pick your country code from the column **alpha-2 codes** of [Wikipedia's list of ISO 3166 country codes](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes#Current_ISO_3166_country_codes)"
   required: false
   type: string
 time_zone:
